@@ -9022,6 +9022,18 @@
       max-width: 80%
     }
   }
+
+  @media (min-width:420px) {
+    #foto-mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width:420px) {
+    #foto-desktop {
+      display: none;
+    }
+  }
  
   
   .img-thumbnail {
@@ -18208,14 +18220,80 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo/Arvo-Bold.ttf');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo/Arvo-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo/Arvo-Italic.ttf');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo/Arvo-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
   
   /* Typography */
   body {
     font-size: 0.937rem;
-    font-family: "Rubik", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: initial;
     line-height: normal;
     -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: "Arvo", sans-serif;
+    font-weight: 900;
   }
   
   h1, h2, h3, h4, h5, h6,
@@ -18598,7 +18676,8 @@
   
 
   .home {
-    background: url("../images/banner-bg\ \(copy\).svg");
+   background: url("../images/banner-2.svg"); 
+  
     background-repeat-y: no-repeat;
     background-position: 0 -50px;
     padding-top: 103px;
@@ -18606,13 +18685,28 @@
   
   @media (max-width: 991px) {
     .home {
-      padding-top: 71px;
+      padding-top: 120px;
+      background: url("../images/banner-bg\ \(copy\).svg");
+     background-repeat-y: no-repeat;
+      background-position: 0 -50px;
+   
+      
+      
+    }
+    
+  }
+
+  @media (max-width: 420px) {
+    .main-banner {
+      color: #13172b !important;
+      padding-top: 115px;
+      margin-top: 40px;
     }
   }
   
   .main-banner {
     padding: 4.2rem 0 14rem 0;
-    color: #ffffff;
+    color: #ffff;
     background-size: cover;
   }
   
@@ -18620,6 +18714,7 @@
     .main-banner {
       padding: 1rem;
       margin-bottom: 50px;
+      
     }
   }
   
@@ -19002,3 +19097,29 @@
   .flipster-custom-nav .flipster-custom-nav-item .flipster-custom-nav-link.active {
     background: #f1efef;
   }
+
+  .map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
